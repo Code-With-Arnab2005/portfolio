@@ -290,8 +290,8 @@ const navLinks = [
     {
       title: "My Portfolio",
       image: "/images/portfolio.png",
-      liveLink: "https://your-portfolio.com",
-      githubLink: "https://github.com/your-username/portfolio",
+      liveLink: "https://portfolio-production-94f4.up.railway.app/",
+      githubLink: "https://github.com/Code-With-Arnab2005/portfolio",
     },
     {
       title: "Easy Attendance",
