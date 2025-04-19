@@ -2,7 +2,6 @@ import React from 'react';
 import Hero from '../sections/Hero';
 import ShowSection from '../sections/ShowSection';
 import Navbar from './Navbar';
-import LogoSection from './logoSection';
 import FeatureCards from '../sections/FeatureCards';
 import ExperienceSection from '../sections/ExperienceSection';
 import TechStack from '../sections/TechStack';
