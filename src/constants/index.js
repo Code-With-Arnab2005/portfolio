@@ -104,7 +104,7 @@ const navLinks = [
       imgPath: "/images/logos/three.png",
     },
     {
-      name: "Project Manager",
+      name: "Git/Github Skills",
       imgPath: "/images/logos/git.svg",
     },
   ];
