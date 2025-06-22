@@ -9,7 +9,7 @@ import AnimatedCounter from '../components/AnimatedCounter.jsx';
 const Hero = () => {
 
     useGSAP(() => {
-        gsap.fromTo('.hero-text h1', 
+        gsap.fromTo('.hero-text h1',
             {
                 y: 70,
                 opacity: 0
@@ -33,7 +33,7 @@ const Hero = () => {
 
             <div className='hero-layout'>
                 {/* hero content */}
-                <header className='flex flex-col justify-center md:w-full w-screen md:px-20 px-5'>
+                <header className='flex justify-between md:w-full w-screen md:px-20 px-5'>
                     <div className='flex flex-col gap-7'>
                         <div className='hero-text'>
                             <h1>
@@ -60,13 +60,24 @@ const Hero = () => {
                         <p className='text-white-50 md:text-xl relative z-10 pointer-events-none'>
                             Hi, I'm Arnab, a developer based in India with a passion for code.
                         </p>
-                        <Button 
+                        <Button
                             className="md:w-80 md:h-16 w-60 h-12"
                             id="button"
                             text="See my Work"
                             target="#work"
                         />
                     </div>
+
+                    {/* Profile Picture */}
+                    <div className="hidden sm:flex flex-1 justify-center items-center">
+                        <img
+                            src="/images/profile_pic.jpg"
+                            alt="Profile Picture"
+                            className="w-50 h-50 md:w-120 md:h-120 object-cover object-top rounded-xl shadow-xl border-2 border-white transition-transform duration-300 hover:scale-105"
+                        />
+
+                    </div>
+
                 </header>
 
                 {/* 3d model */}
@@ -75,9 +86,10 @@ const Hero = () => {
                         <HeroExperience />
                     </div>
                 </figure> */}
+
             </div>
 
-            {/* <AnimatedCounter /> */}
+            <AnimatedCounter />
         </section>
     )
 }

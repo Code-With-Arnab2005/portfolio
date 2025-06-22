@@ -40,6 +40,7 @@ const ExperienceSection = () => {
             }
         })
 
+
         gsap.utils.toArray('.expText').forEach((text) => {
             gsap.from(text, {
                 xPercent: 0,
@@ -61,7 +62,7 @@ const ExperienceSection = () => {
         >
             <div className="w-full h-full md:px-20 px-5">
                 <TitleHeader
-                    title="My Journey of Being Web Developer"
+                    title="My Journey of Being Web Developer and Competitive Programmer"
                     sub="💼 How I learn new Technologies"
                 />
                 <div className="mt-32 relative">
