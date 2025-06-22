@@ -9,6 +9,7 @@ import Testimonials from '../sections/Testimonials';
 import Contact from '../sections/Contact';
 import Footer from '../sections/Footer';
 import ContactMe from '../sections/ContactMe';
+import DSASection from '../sections/DsaCp';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Navbar />
       <Hero />
       <ShowSection />
+      <DSASection />
       {/* <LogoSection /> */}
       {/* <FeatureCards /> */}
       <ExperienceSection />

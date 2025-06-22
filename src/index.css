@@ -271,7 +271,7 @@ section {
   }
 
   .tech-grid {
-    @apply grid xl:grid-cols-5 md:grid-cols-3 grid-cols-1 xl:gap-16 md:gap-10 gap-5 mt-16;
+    @apply grid xl:grid-cols-8 md:grid-cols-8 grid-cols-3 xl:gap-16 md:gap-10 gap-5 mt-16;
   }
 
   .tech-icon-wrapper {

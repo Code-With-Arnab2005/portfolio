@@ -98,8 +98,14 @@ const techStackImgs = [
   { name: "Node.js", imgPath: "https://cdn.simpleicons.org/nodedotjs/ffffff" },
   { name: "MongoDB", imgPath: "https://cdn.simpleicons.org/mongodb/ffffff" },
   { name: "Next.js", imgPath: "https://cdn.simpleicons.org/nextdotjs/ffffff" },
+  { name: "Postman", imgPath: "https://cdn.simpleicons.org/postman/ffffff" },
+  { name: "Vercel", imgPath: "https://cdn.simpleicons.org/vercel/ffffff" },
+  { name: "Firebase", imgPath: "https://cdn.simpleicons.org/firebase/ffffff" },
+  { name: "Appwrite", imgPath: "https://cdn.simpleicons.org/appwrite/ffffff" },
   { name: "Socket.io", imgPath: "https://cdn.simpleicons.org/socketdotio/ffffff" },
   { name: "Three.js", imgPath: "https://cdn.simpleicons.org/threedotjs/ffffff" },
+  { name: "Redux", imgPath: "https://cdn.simpleicons.org/redux/ffffff" },
+  
 ]
 
 // const techStackImgs = [
