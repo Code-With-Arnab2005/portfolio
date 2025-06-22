@@ -34,7 +34,7 @@ const TechStack = () => {
                     title="How I Can Contribute & My Key Skills"
                     sub="🤝 What I Bring to the Table"
                 />
-                <div className="tech-grid">
+                <div className="tech-grid border-2 border-gray-500 px-4 sm:px-6 lg:px-20 py-16 rounded-lg">
                     {/* {techStackIcons.map((techStackIcon) => (
                         <div
                             key={techStackIcon.name}
@@ -54,21 +54,21 @@ const TechStack = () => {
 
                     {/* This is for the img part */}
                     {techStackImgs.map((techStackIcon, index) => (
-            <div
-              key={index}
-              className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg"
-            >
-              {/* <div className="tech-card-animated-bg" /> */}
-              <div className="tech-card-content">
-                <div className="tech-icon-wrapper">
-                  <img src={techStackIcon.imgPath} alt="" />
-                </div>
-                <div className="padding-x w-full">
-                  <p>{techStackIcon.name}</p>
-                </div>
-              </div>
-            </div>
-          ))}
+                        <div
+                            key={index}
+                            className="hover:scale-105 transition duration-200 card-border tech-card overflow-hidden group xl:rounded-full rounded-lg"
+                        >
+                            {/* <div className="tech-card-animated-bg" /> */}
+                            <div className="tech-card-content">
+                                <div className="tech-icon-wrapper">
+                                    <img className='w-40' src={techStackIcon.imgPath} alt="" />
+                                </div>
+                                <div className="padding-x w-full">
+                                    <p>{techStackIcon.name}</p>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>

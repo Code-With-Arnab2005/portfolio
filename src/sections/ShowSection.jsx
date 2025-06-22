@@ -92,7 +92,7 @@ const ShowSection = () => {
         </div>
       </div> */}
 
-      <main className="border-2 border-gray-500 text-white px-4 sm:px-6 lg:px-20 py-16">
+      <main className="text-white">
         <div className="mb-20">
           <TitleHeader
             title="My Web Development Projects"
@@ -106,7 +106,7 @@ const ShowSection = () => {
           </Link> */}
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-15">
+        <div className="border-2 border-gray-500 px-4 sm:px-6 lg:px-20 py-16 rounded-lg grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-15">
           {projects.map((project, index) => (
             <ProjectCard
               key={index}

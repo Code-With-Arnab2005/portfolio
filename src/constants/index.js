@@ -87,27 +87,55 @@ const abilities = [
 ];
 
 const techStackImgs = [
-  {
-    name: "React Developer",
-    imgPath: "/images/logos/react.png",
-  },
-  {
-    name: "Python Developer",
-    imgPath: "/images/logos/python.svg",
-  },
-  {
-    name: "Backend Developer",
-    imgPath: "/images/logos/node.png",
-  },
-  {
-    name: "Interactive Developer",
-    imgPath: "/images/logos/three.png",
-  },
-  {
-    name: "Git/Github Skills",
-    imgPath: "/images/logos/git.svg",
-  },
-];
+  { name: "C", imgPath: "https://cdn.simpleicons.org/c/ffffff" },
+  { name: "C++", imgPath: "https://cdn.simpleicons.org/cplusplus/ffffff" },
+  { name: "JavaScript", imgPath: "https://cdn.simpleicons.org/javascript/ffffff" },
+  { name: "Python", imgPath: "https://cdn.simpleicons.org/python/ffffff" },
+  { name: "GitHub", imgPath: "https://cdn.simpleicons.org/github/ffffff" },
+  { name: "React", imgPath: "https://cdn.simpleicons.org/react/ffffff" },
+  { name: "Tailwind CSS", imgPath: "https://cdn.simpleicons.org/tailwindcss/ffffff" },
+  { name: "Express", imgPath: "https://cdn.simpleicons.org/express/ffffff" },
+  { name: "Node.js", imgPath: "https://cdn.simpleicons.org/nodedotjs/ffffff" },
+  { name: "MongoDB", imgPath: "https://cdn.simpleicons.org/mongodb/ffffff" },
+  { name: "Next.js", imgPath: "https://cdn.simpleicons.org/nextdotjs/ffffff" },
+  { name: "Socket.io", imgPath: "https://cdn.simpleicons.org/socketdotio/ffffff" },
+  { name: "Three.js", imgPath: "https://cdn.simpleicons.org/threedotjs/ffffff" },
+]
+
+// const techStackImgs = [
+//   {
+//     name: "React Developer",
+//     imgPath: "/images/logos/react.png",
+//   },
+//   {
+//     name: "Python",
+//     imgPath: "/images/logos/python.svg",
+//   },
+//   {
+//     name: "Backend Developer",
+//     imgPath: "/images/logos/node.png",
+//   },
+//   {
+//     name: "Three JS",
+//     imgPath: "/images/logos/three.png",
+//   },
+//   {
+//     name: "Git/Github Skills",
+//     imgPath: "/images/logos/git.svg",
+//   },
+//   {
+//     name: "Git/Github Skills",
+//     imgPath: "/images/logos/git.svg",
+//   },
+//   {
+//     name: "Express",
+//     imgPath: "/images/logos/express.svg",
+//   },
+//   {
+//     name: "MongoDB",
+//     imgPath: "/images/logos/mongodb.svg",
+//   },
+// ];
 
 const techStackIcons = [
   {

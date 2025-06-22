@@ -33,7 +33,7 @@ const Hero = () => {
 
             <div className='hero-layout'>
                 {/* hero content */}
-                <header className='flex justify-between md:w-full w-screen md:px-20 px-5'>
+                <header className='gap-10 flex sm:flex-row items-center justify-center flex-col  md:w-full w-screen md:px-20 px-5'>
                     <div className='flex flex-col gap-7'>
                         <div className='hero-text'>
                             <h1>
@@ -69,7 +69,7 @@ const Hero = () => {
                     </div>
 
                     {/* Profile Picture */}
-                    <div className="hidden sm:flex flex-1 justify-center items-center">
+                    <div className="sm:flex flex-1 justify-center items-center">
                         <img
                             src="/images/profile_pic.jpg"
                             alt="Profile Picture"
