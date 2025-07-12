@@ -339,6 +339,12 @@ const socialImgs = [
 
 const projects = [
   {
+    title: "Scribble Dimension - Real Time Multiplayer guessing game",
+    image: "/images/Scribble.png",
+    liveLink: "https://scribble-arena-frontend.onrender.com/",
+    githubLink: "https://github.com/Code-With-Arnab2005",
+  },
+  {
     title: "EasyChat - Real Time chat app with AI-chatbot",
     image: "/images/easyChat.png",
     liveLink: "https://easy-chat-jade.vercel.app/",
