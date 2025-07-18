@@ -43,29 +43,26 @@ const DSASection = () => {
   const cardRefs = useRef([]);
 
   useGSAP(() => {
-    gsap.fromTo(
-      sectionRef.current,
-      { opacity: 0 },
-      { opacity: 1, duration: 1.5 }
-    );
-
     cardRefs.current.forEach((card, index) => {
       gsap.fromTo(
         card,
-        { y: 50, opacity: 0 },
+        { y: 20, opacity: 0 },
         {
           y: 0,
           opacity: 1,
-          duration: 1,
-          delay: 0.2 * index,
+          duration: 0.4,
+          delay: 0.05 * index, // minimal delay for quick appearance
           scrollTrigger: {
             trigger: card,
-            start: 'top bottom-=100',
+            start: 'top 80%', // triggers just before it enters view
+            toggleActions: 'play none none none',
           },
         }
       );
     });
   }, []);
+
+  ;
 
   return (
     <section id="dsa" ref={sectionRef} className="flex-center section-padding">

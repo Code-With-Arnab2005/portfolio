@@ -34,22 +34,22 @@ const TechStack = () => {
                     title="How I Can Contribute & My Key Skills"
                     sub="🤝 What I Bring to the Table"
                 />
-                <div className="tech-grid border-2 border-gray-500 px-4 sm:px-6 lg:px-20 py-16 rounded-lg">
+                <div className="tech-grid border-2 border-gray-500 px-4 sm:px-6 lg:px-20 py-4 md:py-16 rounded-lg">
 
                     {/* This is for the img part */}
                     {techStackImgs.map((techStackIcon, index) => (
                         <div
                         key={index}
-                        className="hover:scale-105 transition duration-200 card-border tech-card flex flex-col items-center justify-center p-4 rounded-4xl w-30 h-30"
+                        className="hover:scale-105 transition duration-200 card-border tech-card flex flex-col items-center justify-center p-4 rounded-4xl w-20 h-20 md:w-30 md:h-30"
                         >
-                            <div className="w-15 h-15 flex justify-center items-center">
+                            <div className="w-6 h-6 md:w-15 md:h-15 flex justify-center items-center">
                                 <img
                                     src={techStackIcon.imgPath}
                                     alt={techStackIcon.name}
                                     className="w-full h-full object-contain"
                                     />
                             </div>
-                            <p className="text-sm text-center mt-2">{techStackIcon.name}</p>
+                            <p className="text-[11px] md:text-sm text-center mt-2">{techStackIcon.name}</p>
                         </div>
                     ))}
 

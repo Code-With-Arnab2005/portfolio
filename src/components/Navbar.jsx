@@ -25,7 +25,7 @@ const Navbar = () => {
 
                 <a className='contact-btn group:' href="#contact">
                     <Button
-                        className="md:w-60 md:h-16 w-60 h-12"
+                        className="hidden md:block md:w-60 md:h-16"
                         id="button"
                         text="Contact"
                         target="#contact"

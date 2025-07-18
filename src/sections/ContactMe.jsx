@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import TitleHeader from '../components/TitleHeader'
-import { Mail, Phone, MapPin, Github, Linkedin } from 'lucide-react'
+import { Mail, Phone, MapPin, Github, Linkedin, ClipboardCopy } from 'lucide-react'
+import CopyButton from '../components/CopyButton'
 
 const ContactMe = () => {
+
     return (
         <section id="contactme" className="flex-center section-padding">
             <div className="w-full max-w-4xl px-4 sm:px-6 lg:px-8 mx-auto">
@@ -16,29 +18,36 @@ const ContactMe = () => {
                     {/* Email */}
                     <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
                         <Mail className="text-cyan-400" />
-                        <span className="text-lg sm:text-xl break-words">
-                            <strong>Email:</strong> arnabbhattacharya2005@gmail.com
+                        <span className="text-[15px] md:text-xl break-words">
+                            <div className='flex flex-col md:flex-row ma:gap-4 gap-1 md:justify-center md:items-center'>
+                                <span><strong>Email:</strong></span>
+                                <div className='flex gap-1 md:gap-4 justify-center items-center'>
+                                    <span>arnabbhattacharya2005@gmail.com</span>
+                                    <CopyButton text={'arnabbhattacharya2005@gmail.com'} />
+                                </div>
+                            </div>
                         </span>
                     </div>
 
                     {/* Phone */}
                     <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
                         <Phone className="text-cyan-400" />
-                        <span className="text-lg sm:text-xl">
+                        <span className="flex md:gap-4 gap-2 justify-center items-center text-[15px] md:text-xl">
                             <strong>Phone:</strong> +91 74393 02009
+                            <CopyButton text={'+91 74393 02009'} />
                         </span>
                     </div>
 
                     {/* Location */}
                     <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
                         <MapPin className="text-cyan-400" />
-                        <span className="text-lg sm:text-xl">
+                        <span className="text-[15px] md:text-xl">
                             <strong>Location:</strong> Kolkata, West Bengal, India
                         </span>
                     </div>
 
                     {/* Socials */}
-                    <div className="flex flex-col gap-4 mt-6 text-lg sm:text-xl">
+                    <div className="flex flex-col gap-4 mt-6 text-[15px] md:text-xl">
                         <span><strong>Socials:</strong></span>
                         <div className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6">
                             <div className='flex items-center gap-2'>
@@ -68,8 +77,8 @@ const ContactMe = () => {
 
                     {/* DSA/CP Platforms */}
                     <div className="flex flex-col gap-4 mt-10">
-                        <h3 className="text-xl sm:text-2xl font-semibold">📘 My DSA/CP Platforms Account:</h3>
-                        <div className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6 text-lg sm:text-xl">
+                        <h3 className="text-[20px] md:text-2xl font-semibold">📘 My DSA/CP Platforms Account:</h3>
+                        <div className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6 text-[15px] md:text-xl">
                             <div className='flex items-center gap-2'>
                                 <img
                                     src="https://cdn.simpleicons.org/geeksforgeeks/06b6d4"
@@ -113,6 +122,21 @@ const ContactMe = () => {
                                     className="hover:text-cyan-400"
                                 >
                                     Codeforces
+                                </a>
+                            </div>
+                            <div className='flex items-center gap-2'>
+                                <img
+                                    src="https://cdn.simpleicons.org/codechef/06b6d4"
+                                    alt="Coding Ninjas"
+                                    className="w-6 h-6"
+                                />
+                                <a
+                                    href="https://www.codechef.com/users/arnab2005"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:text-cyan-400"
+                                >
+                                    Codechef
                                 </a>
                             </div>
                             <div className='flex items-center gap-2'>
