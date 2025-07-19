@@ -1,5 +1,9 @@
 const navLinks = [
   {
+    name: "DSA/CP Profiles",
+    link: "#dsa",
+  },
+  {
     name: "Projects",
     link: "#work",
   },

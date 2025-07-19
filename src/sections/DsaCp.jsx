@@ -12,15 +12,16 @@ const dsaData = [
     name: 'LeetCode',
     url: 'https://leetcode.com/u/Arnab_Bhattacharya_2005/',
     img: 'https://cdn.simpleicons.org/leetcode/06b6d4',
-    problemsSolved: 100,
+    problemsSolved: 150,
     // contests: 'Participated in 30+ contests',
   },
   {
     name: 'Codeforces',
     url: 'https://codeforces.com/profile/Arnab_Bhattacharya',
     img: 'https://cdn.simpleicons.org/codeforces/06b6d4',
-    rating: '1211 (Max:1247, Pupil)',
+    rating: '1230 (Max:1290, Pupil)',
     contests: '40+ contests',
+    problemsSolved: 270
   },
   {
     name: 'GeeksforGeeks',
@@ -36,33 +37,39 @@ const dsaData = [
     problemsSolved: 20,
     // contests: 'CN Studio Leaderboard',
   },
+  {
+    name: 'Codechef',
+    url: 'https://www.codechef.com/users/arnab2005',
+    img: 'https://cdn.simpleicons.org/codechef/06b6d4',
+    rating: '1433(2-star)',
+    contests: '20+ contest'
+    // contests: 'CN Studio Leaderboard',
+  },
 ];
 
 const DSASection = () => {
   const sectionRef = useRef(null);
   const cardRefs = useRef([]);
 
-  useGSAP(() => {
-    cardRefs.current.forEach((card, index) => {
-      gsap.fromTo(
-        card,
-        { y: 20, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 0.4,
-          delay: 0.05 * index, // minimal delay for quick appearance
-          scrollTrigger: {
-            trigger: card,
-            start: 'top 80%', // triggers just before it enters view
-            toggleActions: 'play none none none',
-          },
-        }
-      );
-    });
-  }, []);
-
-  ;
+  // useGSAP(() => {
+  //   cardRefs.current.forEach((card, index) => {
+  //     gsap.fromTo(
+  //       card,
+  //       { y: 20, opacity: 0 },
+  //       {
+  //         y: 0,
+  //         opacity: 1,
+  //         duration: 0.4,
+  //         delay: 0.05 * index, // minimal delay for quick appearance
+  //         scrollTrigger: {
+  //           trigger: card,
+  //           start: 'top 80%', // triggers just before it enters view
+  //           toggleActions: 'play none none none',
+  //         },
+  //       }
+  //     );
+  //   });
+  // }, []);
 
   return (
     <section id="dsa" ref={sectionRef} className="flex-center section-padding">

@@ -41,13 +41,13 @@ const Contact = () => {
 
   return (
     <section id="contact" className="flex-center section-padding">
-      <div className="w-full h-full ">
+      <div className="md:w-full md:h-full">
         <TitleHeader
           title="Get in Touch – Let’s Connect"
           sub="💬 Have questions or ideas? Let’s talk!"
         />
         <div className="px-4 sm:px-6 lg:px-20 py-16 rounded-lg mt-10 flex items-center justify-center">
-          <div className="w-[60vw] xl:col-span-5">
+          <div className="w-[80vw] md:w-[60vw] xl:col-span-5">
             <div className="flex-center card-border rounded-xl p-10">
               <form
                 ref={formRef}
