@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { MoreVertical } from 'lucide-react';
+import { MoreVertical, MoreHorizontal, Menu } from 'lucide-react';
 
 const HeroDropdown = ({ options = [] }) => {
   const [open, setOpen] = useState(false);
@@ -22,10 +22,10 @@ const HeroDropdown = ({ options = [] }) => {
     <div className="relative inline-block text-left" ref={menuRef}>
       <button
         onClick={toggleMenu}
-        className="p-2 rounded hover:bg-gray-700 transition text-gray-300"
+        className="transition scroll-smooth hover:cursor-pointer text-gray-300"
         title="Menu"
       >
-        <MoreVertical size={20} />
+        <Menu size={30} />
       </button>
 
       {open && (

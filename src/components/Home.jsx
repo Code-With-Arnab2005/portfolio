@@ -10,6 +10,7 @@ import Contact from '../sections/Contact';
 import Footer from '../sections/Footer';
 import ContactMe from '../sections/ContactMe';
 import DSASection from '../sections/DsaCp';
+import CertificateSection from '../sections/CertificateSection';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Hero />
       <DSASection />
       <ShowSection />
+      <CertificateSection />
       {/* <LogoSection /> */}
       {/* <FeatureCards /> */}
       <ExperienceSection />
