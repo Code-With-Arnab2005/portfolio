@@ -361,6 +361,12 @@ const projects = [
     githubLink: "https://github.com/Code-With-Arnab2005/AI-Interview-Assistant",
   },
   {
+    title: "AI powered Smart Ticketing System with Inngest Workflow",
+    image: "/images/SmartTicketSystem.png",
+    liveLink: "https://ai-ticket-agent-frontend.onrender.com",
+    githubLink: "https://github.com/Code-With-Arnab2005/ai-ticket-agent",
+  },
+  {
     title: "Easy Attendance",
     image: "/images/easy_attendance.png",
     liveLink: "https://easy-present-production-0924.up.railway.app/",
