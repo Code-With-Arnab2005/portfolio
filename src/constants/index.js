@@ -389,21 +389,21 @@ const projects = [
 const certificates = [
   {
     title: "Python Programming",
-    image: "/images/certificates/python.webp",
+    image: "/images/certificates/python.jpg",
     issuedBy: "Arden Computech Pvt. Ltd.",
     issuedDate: "February 12 2025",
     url: "https://drive.google.com/file/d/18rSWHbcjD9zVczDnmQSQJV11-4zTpMla/view?usp=sharing",
   },
   {
     title: "Postman API Fundamentals Student Expert",
-    image: "/images/certificates/postman.webp",
+    image: "/images/certificates/postman.jpg",
     issuedBy: "LetsUpgrade",
     issuedDate: "February 10 2025",
     url: "https://drive.google.com/file/d/1ZHrdhQCR1AUu-_muBoXlhhBKPAX20bE9/view?usp=sharing",
   },
   {
     title: "Principles of Management",
-    image: "/images/certificates/management.webp",
+    image: "/images/certificates/management.jpg",
     issuedBy: "IIT Roorkee (NPTEL Online Certification)",
     issuedDate: "May 2025",
     url: "https://drive.google.com/file/d/1eb8STLwys5wBfAkHdtrOqra9cig6-jep/view?usp=sharing",
