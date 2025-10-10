@@ -388,6 +388,20 @@ const projects = [
 
 const certificates = [
   {
+    title: "Intership at Dookanpe",
+    image: "/images/certificates/dookanpe_certificate.jpg",
+    issuedBy: "Anthrovia Technologies Pvt. Ltd.",
+    issuedDate: "August 24 2025",
+    url: "https://drive.google.com/file/d/1ka0LrxcQzsDwafLBQ3mtFrJGc9HCTyv_/view?usp=drive_link",
+  },
+  {
+    title: "Made in JIS - 2025 Hackthon(Winners)",
+    image: "/images/certificates/made_in_jis.jpg",
+    issuedBy: "JIS University",
+    issuedDate: "July 29 2025",
+    url: "https://drive.google.com/file/d/1TgOb3j2lmHSx02u_p7SbchOdg0NoZ8DI/view?usp=sharing",
+  },
+  {
     title: "Python Programming",
     image: "/images/certificates/python.jpg",
     issuedBy: "Arden Computech Pvt. Ltd.",
