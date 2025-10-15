@@ -15,7 +15,7 @@ const Navbar = () => {
         { label: 'Development Journey', onClick: () => document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' }) },
         { label: 'Skills', onClick: () => document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' }) },
         { label: 'Contact Me', onClick: () => document.getElementById('contactme')?.scrollIntoView({ behavior: 'smooth' }) },
-        { label: 'Contact', onClick: () => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }) },
+        { label: 'Give Feedback', onClick: () => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }) },
     ];
 
 
@@ -39,7 +39,7 @@ const Navbar = () => {
                     </ul>
                 </nav>
 
-                <a target='_blank' href="https://drive.google.com/file/d/129hydo2W3e6X9Q51NWGBBEwfsFuhBWg8/view?usp=sharing">
+                <a target='_blank' href="https://drive.google.com/file/d/1h9Bb3ZTikA9XIishZ4y-RaWhUcjBLgQD/view?usp=sharing">
                     <button className='text-black px-4 py-3 hover:cursor-pointer rounded-lg bg-white-50'>RESUME</button>
                 </a>
                 
@@ -47,8 +47,8 @@ const Navbar = () => {
                     <Button
                         className="hidden md:block w-60 h-16"
                         id="button"
-                        text="Contact"
-                        target="#contact"
+                        text="Contact Me"
+                        target="#contactme"
                     />
                 </a>
 

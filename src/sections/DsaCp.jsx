@@ -32,7 +32,7 @@ const dsaData = [
   },
   {
     name: 'Coding Ninjas',
-    url: 'https://www.codingninjas.com/studio/profile/arnabbhattacharya2005',
+    url: 'https://www.naukri.com/code360/profile/CodeWithArnab',
     img: 'https://cdn.simpleicons.org/codingninjas/06b6d4',
     problemsSolved: 20,
     // contests: 'CN Studio Leaderboard',
