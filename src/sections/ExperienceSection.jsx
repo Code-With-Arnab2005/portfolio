@@ -1,119 +1,69 @@
-import React from 'react'
-import TitleHeader from '../components/TitleHeader'
-import { expCards } from '../constants'
-import GlowCard from '../components/GlowCard'
-import gsap from 'gsap'
-import { useGSAP } from '@gsap/react'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import React, { useRef } from "react";
+import TitleHeader from "../components/TitleHeader";
+import { experiences } from "../constants";
+import ExperienceCard from "../components/ExperienceCard";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
 
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger);
 
 const ExperienceSection = () => {
+  const sectionRef = useRef(null);
 
-    useGSAP(() => {
-        gsap.utils.toArray('.timeline-card').forEach((card) => {
-            gsap.from(card, {
-                xPercent: -100,
-                opacity: 0,
-                transformOrigin: 'left left',
-                duration: 1,
-                ease: 'power2.inOut',
-                scrollTrigger: {
-                    trigger: card,
-                    start: 'top 80%'
-                }
-            })
-        })
+  useGSAP(() => {
+    gsap.from(sectionRef.current, {
+      opacity: 0,
+      y: 50,
+      duration: 1.2,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: sectionRef.current,
+        start: "top 85%",
+      },
+    });
 
-        gsap.to('.timeline', {
-            transformOrigin: 'bottom bottom',
-            ease: 'power1.inOut',
-            scrollTrigger: {
-                trigger: '.timeline',
-                start: 'top center',
-                end: '70% center',
-                onUpdate: (self) => {
-                    gsap.to('.timeline', {
-                        scaleY: 1 - self.progress
-                    })
-                }
-            }
-        })
+    gsap.utils.toArray(".exp-card").forEach((card, index) => {
+      gsap.from(card, {
+        opacity: 0,
+        y: 60,
+        duration: 1,
+        delay: index * 0.1,
+        scrollTrigger: {
+          trigger: card,
+          start: "top 90%",
+        },
+      });
+    });
+  }, []);
 
+  return (
+    <section id="experience" ref={sectionRef} className="flex-center section-padding">
+      <main className="text-white w-full">
+        <div className="mb-20">
+          <TitleHeader
+            title="My Work Experience"
+            sub="💼 Internships and Professional Roles I have completed"
+          />
+        </div>
 
-        gsap.utils.toArray('.expText').forEach((text) => {
-            gsap.from(text, {
-                xPercent: 0,
-                opacity: 0,
-                duration: 1,
-                ease: 'power2.inOut',
-                scrollTrigger: {
-                    trigger: text,
-                    start: 'top 70%'
-                }
-            })
-        })
-    })
+        <div className="border-2 border-gray-500 rounded-lg px-4 sm:px-6 lg:px-20 py-14 grid gap-12">
+          {experiences.map((exp, index) => (
+            <ExperienceCard
+              key={index}
+              className="exp-card"
+              company={exp.company}
+              role={exp.role}
+              duration={exp.duration}
+              description={exp.description}
+              tech={exp.tech}
+              certificateUrl={exp.certificateUrl}
+            />
+          ))}
+        </div>
+      </main>
+    </section>
+  );
+};
 
-    return (
-        <section
-            id="experience"
-            className="flex-center md:mt-40 mt-20 section-padding xl:px-0"
-        >
-            <div className="w-full h-full md:px-20 px-5">
-                <TitleHeader
-                    title="My Journey of Being Web Developer and Competitive Programmer"
-                    sub="💼 How I learn new Technologies"
-                />
-                <div className="mt-32 relative">
-                    <div className="relative z-50 xl:space-y-32 space-y-10">
-                        {expCards.map((card, ind) => (
-                            <div key={ind} className="exp-card-wrapper">
-                                <div className="xl:w-2/6">
-                                    <GlowCard card={card}>
-                                        <div>
-                                            <img src={card.imgPath} alt="exp-img" />
-                                        </div>
-                                    </GlowCard>
-                                </div>
-                                <div className="xl:w-4/6">
-                                    <div className="flex items-start">
-                                        <div className="timeline-wrapper">
-                                            <div className="timeline" />
-                                            <div className="gradient-line w-1 h-full" />
-                                        </div>
-                                        <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
-                                            <div className="timeline-logo">
-                                                <img src={card.logoPath} alt="logo" />
-                                            </div>
-                                            <div>
-                                                <h1 className="font-semibold text-3xl">{card.title}</h1>
-                                                <p className="my-5 text-white-50">
-                                                    🗓️&nbsp;{card.date}
-                                                </p>
-                                                <p className="text-[#839CB5] italic">
-                                                    Responsibilities
-                                                </p>
-                                                <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">
-                                                    {card.responsibilities.map(
-                                                        (responsibility, index) => (
-                                                            <li key={index} className="text-lg">
-                                                                {responsibility}
-                                                            </li>
-                                                        )
-                                                    )}
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
-        </section>
-    )
-}
-
-export default ExperienceSection
+export default ExperienceSection;

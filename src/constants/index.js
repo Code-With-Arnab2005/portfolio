@@ -147,6 +147,18 @@ const techStackImgs = [
 //   },
 // ];
 
+export const experiences = [
+  {
+    company: "Dookanpe, Anthrovia Techonologies Pvt. Ltd.",
+    role: "Frontend Developer Intern",
+    duration: "July 2025 – August 2025",
+    description:
+      "Developed responsive UI using Next.js and Tailwind, optimized API calls, and improved loading performance by 20%.",
+    tech: ["Next.js", "Tailwind", "REST API"],
+    certificateUrl: "https://drive.google.com/file/d/1ka0LrxcQzsDwafLBQ3mtFrJGc9HCTyv_/view?usp=sharing",
+  }
+];
+
 const techStackIcons = [
   {
     name: "React Developer",
@@ -400,6 +412,13 @@ const certificates = [
     issuedBy: "JIS University",
     issuedDate: "July 29 2025",
     url: "https://drive.google.com/file/d/1TgOb3j2lmHSx02u_p7SbchOdg0NoZ8DI/view?usp=sharing",
+  },
+  {
+    title: "Programming in Java",
+    image: "/images/certificates/java.jpg",
+    issuedBy: "IIT Kharagpur (NPTEL Online Certification)",
+    issuedDate: "November 2025",
+    url: "https://drive.google.com/file/d/1wBW-dFBn1uGxGCi8uMdYexlVNkhGTXwD/view?usp=sharing",
   },
   {
     title: "Python Programming",

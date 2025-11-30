@@ -9,10 +9,11 @@ const Navbar = () => {
     const navigate = useNavigate();
 
     const options = [
-        { label: 'Projects', onClick: () => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' }) },
         { label: 'DSA/CP', onClick: () => document.getElementById('dsa')?.scrollIntoView({ behavior: 'smooth' }) },
+        { label: 'Projects', onClick: () => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' }) },
         { label: 'Certificates', onClick: () => document.getElementById('certificate')?.scrollIntoView({ behavior: 'smooth' }) },
-        { label: 'Development Journey', onClick: () => document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' }) },
+        { label: 'Work Experience', onClick: () => document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' }) },
+        { label: 'Development Journey', onClick: () => document.getElementById('journey')?.scrollIntoView({ behavior: 'smooth' }) },
         { label: 'Skills', onClick: () => document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' }) },
         { label: 'Contact Me', onClick: () => document.getElementById('contactme')?.scrollIntoView({ behavior: 'smooth' }) },
         { label: 'Give Feedback', onClick: () => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }) },
