@@ -5,7 +5,12 @@ const ExperienceCard = ({ company, role, duration, description, tech, certificat
       <p className="text-white-50 font-semibold mt-1">{company}</p>
       <p className="text-white-50 mt-2 italic">{duration}</p>
 
-      <p className="mt-5 text-white-50 leading-relaxed">{description}</p>
+      {/* Bullet Points */}
+      <ul className="mt-5 text-white-50 leading-relaxed list-disc list-inside space-y-2">
+        {description.map((point, idx) => (
+          <li key={idx}>{point}</li>
+        ))}
+      </ul>
 
       <div className="mt-4 flex flex-wrap gap-2">
         {tech.map((t, idx) => (

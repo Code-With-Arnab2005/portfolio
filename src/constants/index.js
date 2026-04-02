@@ -16,8 +16,8 @@ const navLinks = [
   //   link: "#skills",
   // },
   {
-    name: "Contact Me",
-    link: "#contactme",
+    name: "Work Experience",
+    link: "#experience",
   },
 ];
 
@@ -109,7 +109,7 @@ const techStackImgs = [
   { name: "Socket.io", imgPath: "https://cdn.simpleicons.org/socketdotio/ffffff" },
   { name: "Three.js", imgPath: "https://cdn.simpleicons.org/threedotjs/ffffff" },
   { name: "Redux", imgPath: "https://cdn.simpleicons.org/redux/ffffff" },
-  
+
 ]
 
 // const techStackImgs = [
@@ -149,12 +149,29 @@ const techStackImgs = [
 
 export const experiences = [
   {
-    company: "Dookanpe, Anthrovia Techonologies Pvt. Ltd.",
+    company: "BattleBucks, Singularity Gaming Pvt. Ltd.",
+    role: "Frontend Developer Intern",
+    duration: "2 February 2026 – Now",
+    description: [
+      "Migrated marketplace from Shopify to Medusa in BB Store, enabling greater flexibility and control over e-commerce workflows.",
+      "Optimized performance of the main BattleBucks website, reducing load times by ~20%.",
+      "Developed responsive UI components including collapsible sidebars for admin dashboard and store.",
+      "Implemented interactive graphs and workflow visualizations in the admin panel.",
+      "Debugged and resolved multiple frontend issues to improve stability and user experience."
+    ],
+    tech: ["Next.js", "React.js", "Medusa", "Tailwind CSS", "REST APIs", "JavaScript", "TypeScript"],
+    // certificateUrl: "https://drive.google.com/file/d/1ka0LrxcQzsDwafLBQ3mtFrJGc9HCTyv_/view?usp=sharing",
+  },
+  {
+    company: "Dookanpe, Anthrovia Technologies Pvt. Ltd.",
     role: "Frontend Developer Intern",
     duration: "July 2025 – August 2025",
-    description:
-      "Developed responsive UI using Next.js and Tailwind, optimized API calls, and improved loading performance by 20%.",
-    tech: ["Next.js", "Tailwind", "REST API"],
+    description: [
+      "Developed responsive UI using Next.js and Tailwind CSS for improved cross-device compatibility.",
+      "Optimized API calls to enhance data fetching efficiency.",
+      "Improved overall application performance, achieving ~20% faster load times."
+    ],
+    tech: ["Next.js", "Tailwind CSS", "REST APIs"],
     certificateUrl: "https://drive.google.com/file/d/1ka0LrxcQzsDwafLBQ3mtFrJGc9HCTyv_/view?usp=sharing",
   }
 ];
@@ -355,6 +372,12 @@ const socialImgs = [
 
 const projects = [
   {
+    title: "AI Study Companion - an overall solution for study",
+    image: "/images/AIStudyCompanion.png",
+    liveLink: "https://ai-study-companion-frontend.vercel.app/",
+    githubLink: "https://github.com/Code-With-Arnab2005/ai-study-companion"
+  },
+  {
     title: "Scribble Dimension - Real Time Multiplayer guessing game",
     image: "/images/Scribble.png",
     liveLink: "https://scribble-arena-frontend.onrender.com/",
@@ -441,7 +464,7 @@ const certificates = [
     issuedDate: "May 2025",
     url: "https://drive.google.com/file/d/1eb8STLwys5wBfAkHdtrOqra9cig6-jep/view?usp=sharing",
   },
-  
+
 ]
 
 export {
