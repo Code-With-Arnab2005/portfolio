@@ -40,7 +40,7 @@ const Navbar = () => {
                     </ul>
                 </nav>
 
-                <a target='_blank' href="https://drive.google.com/file/d/1E5SkIaSOrtUsg4x4XD0I0aV_MIzMGUuZ/view?usp=sharing">
+                <a target='_blank' href="https://drive.google.com/file/d/1MDDCc00KTvo6avK-Az2eGZgx4vrByAep/view?usp=sharing">
                     <button className='text-black px-4 py-3 hover:cursor-pointer rounded-lg bg-white-50'>RESUME</button>
                 </a>
                 
