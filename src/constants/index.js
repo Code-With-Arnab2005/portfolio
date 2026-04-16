@@ -386,7 +386,7 @@ const projects = [
   {
     title: "EasyChat - Real Time chat app with AI-chatbot",
     image: "/images/easyChat.png",
-    liveLink: "https://easy-chat-jade.vercel.app/",
+    liveLink: "https://easy-chat-git-main-arnab-bhattacharyas-projects.vercel.app/",
     githubLink: "https://github.com/Code-With-Arnab2005/easy-chat",
   },
   {
