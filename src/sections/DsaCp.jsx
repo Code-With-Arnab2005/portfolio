@@ -12,8 +12,9 @@ const dsaData = [
     name: 'LeetCode',
     url: 'https://leetcode.com/u/Arnab_Bhattacharya_2005/',
     img: 'https://cdn.simpleicons.org/leetcode/06b6d4',
-    problemsSolved: 350,
-    // contests: 'Participated in 30+ contests',
+    rating: '1800 (Max: 1852)',
+    problemsSolved: 650,
+    contests: 'Participated in 30+ contests',
   },
   {
     name: 'Codeforces',
