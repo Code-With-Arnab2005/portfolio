@@ -160,7 +160,7 @@ export const experiences = [
       "Debugged and resolved multiple frontend issues to improve stability and user experience."
     ],
     tech: ["Next.js", "React.js", "Medusa", "Tailwind CSS", "REST APIs", "JavaScript", "TypeScript"],
-    // certificateUrl: "https://drive.google.com/file/d/1ka0LrxcQzsDwafLBQ3mtFrJGc9HCTyv_/view?usp=sharing",
+    certificateUrl: "https://drive.google.com/file/d/1zae1C3G2Rntz-iqXZs3mXCnUsL-8AAb6/view?usp=sharing",
   },
   {
     company: "Dookanpe, Anthrovia Technologies Pvt. Ltd.",
