@@ -12,8 +12,8 @@ const dsaData = [
     name: 'LeetCode',
     url: 'https://leetcode.com/u/Arnab_Bhattacharya_2005/',
     img: 'https://cdn.simpleicons.org/leetcode/06b6d4',
-    rating: '1800 (Max: 1852)',
-    problemsSolved: 650,
+    rating: '1860 (Max: 1860, Knight)',
+    problemsSolved: 750,
     contests: 'Participated in 30+ contests',
   },
   {
@@ -21,7 +21,7 @@ const dsaData = [
     url: 'https://codeforces.com/profile/Arnab_Bhattacharya',
     img: 'https://cdn.simpleicons.org/codeforces/06b6d4',
     rating: '1230 (Max:1290, Pupil)',
-    contests: '40+ contests',
+    contests: '60+ contests',
     problemsSolved: 330
   },
   {
@@ -42,8 +42,8 @@ const dsaData = [
     name: 'Codechef',
     url: 'https://www.codechef.com/users/arnab2005',
     img: 'https://cdn.simpleicons.org/codechef/06b6d4',
-    rating: '1433(2-star)',
-    contests: '20+ contest'
+    rating: '1614(3-star)',
+    contests: '35+ contests'
     // contests: 'CN Studio Leaderboard',
   },
 ];
